@@ -1,0 +1,28 @@
+[
+    {
+        "input_folder": "input",
+        "script_name": "resize.py",
+        "output_folder": "resized"
+    },
+    {
+        "input_folder": "resized",
+        "script_name": "rotate8.py",
+        "output_folder": "rotated"
+    },
+    {
+        "input_folder": "rotated",
+        "script_name": "train.py",
+        "output_folder": "saved-network"
+    },
+    {
+        "input_folder": "test-data",
+        "model": "saved-network",
+        "script_name": "validate.py",
+        "output_folder": "results"
+    },
+    {
+        "input_folder": "results",
+        "script_name": "report.py",
+        "output_folder": "reports"
+    }
+]
