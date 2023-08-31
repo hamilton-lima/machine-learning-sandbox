@@ -3,6 +3,7 @@ import importlib.util
 import os
 import logging
 from shutil import copyfile
+import sys 
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -46,7 +47,12 @@ def run_script(script_name, input_folder, output_folder, model_folder=None):
     logging.info(f"END: {script_name}")
 
 def main():
+    
     json_file = 'scripts.json'
+    if len(sys.argv) > 1:
+        json_file = sys.argv[1]
+        logging.info(f"Using JSON file: {json_file}")
+
     scripts_data = load_scripts_from_json(json_file)
     create_folder_if_not_exists(SCRIPT_PATH)    
     

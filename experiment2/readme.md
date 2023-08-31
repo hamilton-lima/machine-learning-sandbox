@@ -11,3 +11,10 @@ main.py
 /saved-network + /test-data > validate.py > /results
 /results > report.py > /reports
 ```
+
+## executing a custom set of scripts 
+
+create a new json file representing the steps that should be executed
+```
+python3 main.py start-with-validate.json
+```

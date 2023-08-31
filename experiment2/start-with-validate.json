@@ -1,0 +1,13 @@
+[
+    {
+        "input_folder": "test-data",
+        "model": "saved-network",
+        "script_name": "validate.py",
+        "output_folder": "results"
+    },
+    {
+        "input_folder": "results",
+        "script_name": "report.py",
+        "output_folder": "reports"
+    }
+]
