@@ -1,0 +1,7 @@
+[
+    {
+        "input_folder": "rotated",
+        "script_name": "train.py",
+        "output_folder": "saved-network"
+    }
+]
