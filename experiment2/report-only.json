@@ -1,0 +1,7 @@
+[
+    {
+        "input_folder": "results",
+        "script_name": "report.py",
+        "output_folder": "reports"
+    }
+]
