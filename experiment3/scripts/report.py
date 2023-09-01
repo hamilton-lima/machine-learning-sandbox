@@ -78,7 +78,7 @@ def generate_html_report(input_folder, output_folder):
             </tr>
     '''
     
-    IMAGES_BASE_PATH='original-test-data'
+    IMAGES_BASE_PATH='test-data'
 
     for result in validation_results:
         result_class = "success" if result["prediction_success"] else "failure"

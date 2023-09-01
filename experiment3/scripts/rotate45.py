@@ -3,7 +3,6 @@ import logging
 import os
 import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from PIL import Image
 from scipy import ndimage
 import matplotlib.pyplot as plt
 
@@ -23,6 +22,7 @@ def setup(input_folder, output_folder, model_folder=None):
 
 
 def generate_rotated_images(input_image, input_folder, output_folder, num_versions=8, rotation_step=45):
+    
     image = plt.imread(input_image)
     input_subfolder = os.path.relpath(os.path.dirname(input_image), input_folder)
     
@@ -35,6 +35,11 @@ def generate_rotated_images(input_image, input_folder, output_folder, num_versio
         
         output_filename = f"version_{version+1:02d}_{os.path.basename(input_image)}"
         output_path = os.path.join(output_subfolder, output_filename)
+        
+        # Normalize pixel values to the [0, 1] range
+        rotated_image = (rotated_image - rotated_image.min()) / (rotated_image.max() - rotated_image.min()) * 255
+        rotated_image = rotated_image.astype(np.uint8)
+        
         plt.imsave(output_path, rotated_image)
 
         logging.info(f"Generated and saved: {output_path}")

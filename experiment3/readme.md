@@ -18,3 +18,16 @@ create a new json file representing the steps that should be executed
 ```
 python3 main.py start-with-validate.json
 ```
+
+
+Image after rotation 
+
+```
+ [[0.02352941 0.01568628 0.02352941 1.        ]
+  [0.01960784 0.01176471 0.01568628 1.        ]
+  [0.08627451 0.08627451 0.07058824 1.        ]
+  ...
+  [0.76862746 0.7372549  0.67058825 1.        ]
+  [0.78431374 0.74509805 0.6784314  1.        ]
+  [0.8        0.75686276 0.6862745  1.        ]]]
+  ```

@@ -1,0 +1,7 @@
+[
+    {
+        "input_folder": "resized",
+        "script_name": "rotate45.py",
+        "output_folder": "rotated"
+    }
+]
