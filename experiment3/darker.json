@@ -1,0 +1,7 @@
+[
+    {
+        "input_folder": "resized",
+        "script_name": "darker.py",
+        "output_folder": "darker"
+    }
+]
