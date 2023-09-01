@@ -16,6 +16,7 @@ pip3 show notebook
 
 1 - basic trainning using jupyter
 2 - create pipeline 
-3 - adapt experiment to use single class and explore results from predict
-3 - use pipeline with larger dataset from https://www.kaggle.com/datasets
-4 - use https://keras.io/keras_tuner/
+3 - fix rotation and add image darkening
+4 - adapt experiment to use single class and explore results from predict
+5 - use pipeline with larger dataset from https://www.kaggle.com/datasets
+6 - use https://keras.io/keras_tuner/
