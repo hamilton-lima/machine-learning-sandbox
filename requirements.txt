@@ -1,6 +1,6 @@
+opencv-python
 notebook
 tensorflow==2.13.*
 matplotlib
 opencv-python
 scipy
-nvidia-cudnn-cu11==8.6.0.163 

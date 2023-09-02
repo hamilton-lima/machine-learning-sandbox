@@ -59,6 +59,7 @@ def capture_camera_stream(camera_url, camera_name, save_interval=1, retain_durat
         cap.release()
 
 if __name__ == "__main__":
-    camera_url = "http://localhost:8080/camera"  # Replace with your camera URL or ID. '0' will access the default camera
+    camera_url = 0
+    # camera_url = "http://localhost:8080/camera"  # Replace with your camera URL or ID. '0' will access the default camera
     camera_name = "Camera1"  # Replace with the name of your camera
     capture_camera_stream(camera_url, camera_name)
