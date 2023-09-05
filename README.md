@@ -25,4 +25,6 @@ future experiments
 
 # images of bubbles processing
 
-1 - find and mark contours - is the opencv good enough to process bubbles?
+1 - find and mark contours - is the opencv good enough to process bubbles? yeap!
+2 - experiment options on how to detect contour
+
