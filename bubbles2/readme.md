@@ -24,3 +24,15 @@ without the gaussianblur
 2023-09-04 20:51:26,206 [INFO]: RETR_TREE: 1589 bubbles found, took 15.835762023925781 miliseconds
 
 reduce around 1% the number of bubbles detected.
+
+# experiment 3
+
+change aproximation parameter in the findCountour
+no visible results, the number of detected bubbles are the same and visually the results are the same
+no check done to confirm is the bubbles are the same.
+
+2023-09-04 20:56:32,749 [INFO]: RETR_EXTERNAL: 1468 bubbles found, took 24.694442749023438 miliseconds
+2023-09-04 20:56:32,749 [INFO]: RETR_LIST: 1589 bubbles found, took 28.215885162353516 miliseconds
+2023-09-04 20:56:32,749 [INFO]: RETR_CCOMP: 1589 bubbles found, took 20.11275291442871 miliseconds
+2023-09-04 20:56:32,749 [INFO]: RETR_TREE: 1589 bubbles found, took 17.678499221801758 miliseconds
+
