@@ -19,6 +19,19 @@ def generate_html_report(input_folder, output_folder):
     success_count = sum(result["prediction_success"] for result in validation_results)
     success_percentage = (success_count / total_images) * 100 if total_images > 0 else 0
 
+    # Calculate success rate per true label
+    label_stats = {}
+    for result in validation_results:
+        label = result["true_label"]
+        if label not in label_stats:
+            label_stats[label] = {'total': 0, 'success': 0}
+        label_stats[label]['total'] += 1
+        if result["prediction_success"]:
+            label_stats[label]['success'] += 1
+
+    label_success_rates = {label: (
+        stats['success'] / stats['total']) * 100 for label, stats in label_stats.items()}
+
     html_content = f'''
     <!DOCTYPE html>
     <html>
@@ -28,10 +41,10 @@ def generate_html_report(input_folder, output_folder):
             font-family: Arial, sans-serif;
             margin: 2em;
         }}
-        h1 {{
+        h1, h2 {{
             text-align: center;
         }}
-        .summary {{
+        .summary, .label-summary {{
             font-weight: bold;
             text-align: center;
             margin-bottom: 1em;
@@ -99,8 +112,27 @@ def generate_html_report(input_folder, output_folder):
             </tr>
         '''
 
+    # Add label success rates to the report
     html_content += '''
         </table>
+        <h2>Success Rate by True Label</h2>
+        <div class="label-summary">
+        <table>
+            <tr>
+                <th>True Label</th>
+                <th>Success Rate (%)</th>
+            </tr>
+    '''
+    for label, rate in label_success_rates.items():
+        html_content += f'''
+            <tr>
+                <td>{label}</td>
+                <td>{rate:.2f}</td>
+            </tr>
+        '''
+    html_content += '''
+        </table>
+        </div>
     </body>
     </html>
     '''
@@ -123,3 +155,4 @@ def run():
     logging.info(f"With parameters: input={input}, output={output}, model={model}")
     generate_html_report(input, output)
 
+# End of the script
