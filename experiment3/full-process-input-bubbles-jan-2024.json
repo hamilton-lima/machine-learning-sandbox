@@ -1,0 +1,33 @@
+[
+    {
+        "input_folder": "bubbles-jan-2024/input",
+        "script_name": "resize.py",
+        "output_folder": "resized"
+    },
+    {
+        "input_folder": "bubbles-jan-2024/resized",
+        "script_name": "darker.py",
+        "output_folder": "bubbles-jan-2024/darker"
+    },
+    {
+        "input_folder": "bubbles-jan-2024/darker",
+        "script_name": "rotate45.py",
+        "output_folder": "bubbles-jan-2024/rotated"
+    },
+    {
+        "input_folder": "bubbles-jan-2024/rotated",
+        "script_name": "train.py",
+        "output_folder": "bubbles-jan-2024/saved-network"
+    },
+    {
+        "input_folder": "bubbles-jan-2024/test-data",
+        "model": "bubbles-jan-2024/saved-network/trained_model.h5",
+        "script_name": "validate.py",
+        "output_folder": "results"
+    },
+    {
+        "input_folder": "bubbles-jan-2024/results",
+        "script_name": "report.py",
+        "output_folder": "bubbles-jan-2024/reports"
+    }
+]
