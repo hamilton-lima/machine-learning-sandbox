@@ -1,0 +1,142 @@
+[
+    {
+        "image_path": "espumacao/1._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 2.678416421986185e-07,
+        "prediction_success": true
+    },
+    {
+        "image_path": "espumacao/10._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob": 0.937540590763092,
+        "prediction_success": false
+    },
+    {
+        "image_path": "espumacao/2._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 3.793158975895494e-05,
+        "prediction_success": true
+    },
+    {
+        "image_path": "espumacao/3._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 1,
+        "predicted_prob": 0.7643498778343201,
+        "prediction_success": false
+    },
+    {
+        "image_path": "espumacao/4._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 0.004825419280678034,
+        "prediction_success": true
+    },
+    {
+        "image_path": "espumacao/5._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 1.763823274814058e-05,
+        "prediction_success": true
+    },
+    {
+        "image_path": "espumacao/6._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 3.177235703333281e-05,
+        "prediction_success": true
+    },
+    {
+        "image_path": "espumacao/7._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 1.047048226610059e-05,
+        "prediction_success": true
+    },
+    {
+        "image_path": "espumacao/8._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 0.00017768819816410542,
+        "prediction_success": true
+    },
+    {
+        "image_path": "espumacao/9._Boa_espumacao.png",
+        "true_label": 0,
+        "predicted_label": 0,
+        "predicted_prob": 5.241223277607787e-08,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/11._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.822385311126709,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/12._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 0,
+        "predicted_prob": 0.3531973361968994,
+        "prediction_success": false
+    },
+    {
+        "image_path": "not-espumacao/13._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.8915252685546875,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/14._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.8042289614677429,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/15._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.8874276876449585,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/16._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.8894714713096619,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/17._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.8269102573394775,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/18._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.8981937766075134,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/19._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.9228565096855164,
+        "prediction_success": true
+    },
+    {
+        "image_path": "not-espumacao/20._Ma_espumacao.png",
+        "true_label": 1,
+        "predicted_label": 1,
+        "predicted_prob": 0.9289904832839966,
+        "prediction_success": true
+    }
+]
